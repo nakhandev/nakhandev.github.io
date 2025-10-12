@@ -1,0 +1,52 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+vendor/
+.bundle/
+*.gem
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if using frontend tools)
+node_modules/
+npm-debug.log*
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Build directories
+build/
+dist/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging

@@ -1,0 +1,93 @@
+# Jekyll Configuration File
+title: "Md Nawab Ali Khan - Java Backend Developer"
+description: "Portfolio of Md Nawab Ali Khan - Java Backend Developer specializing in Spring Boot, REST APIs, and SQL databases"
+author: "Md Nawab Ali Khan"
+email: "nawabnak@gmail.com"
+url: "https://nakhandev.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO settings
+logo: "/assets/images/logo.png"
+social:
+  name: Md Nawab Ali Khan
+  links:
+    - https://github.com/nawabnakhan
+    - https://linkedin.com/in/nawabnakhan
+    - https://twitter.com/nawabnakhan
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - .gitignore
+  - start.sh
+  - stop.sh
+  - pom.xml
+  - src/
+  - target/
+
+# Site settings
+tagline: "Java Backend Developer | Open Source Enthusiast | Continuous Learner"
+github_username: nakhandev
+linkedin_username: nawabnakhan
+email: nawabnak@gmail.com
+phone: "+91 9523948889"
+
+# Build settings
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [dev]
+  blanklines: false
+  profile: false
+  startings: []
+
+# SASS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# Permalinks
+permalink: pretty
+
+# Timezone
+timezone: Asia/Kolkata
