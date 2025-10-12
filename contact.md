@@ -36,7 +36,7 @@ description: "Contact Md Nawab Ali Khan - Java Backend Developer for projects, c
                             <i class="bi bi-envelope-paper me-2"></i>Send Me a Message
                         </h3>
 
-                        <form action="https://formspree.io/f/nawabnak@gmail.com" method="post" id="contactForm">
+                        <form action="https://formspree.io/f/xyznbyyw" method="post" id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label for="name" class="form-label">Full Name *</label>
