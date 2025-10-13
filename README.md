@@ -1,193 +1,200 @@
-# Jekyll Portfolio - Md Nawab Ali Khan
+Md Nawab Ali Khan - Portfolio (Jekyll Site)
 
-A professional portfolio website built with Jekyll, showcasing Java Backend Development skills, projects, and experience.
+A static portfolio website built with Jekyll and hosted on GitHub Pages, showcasing Java backend development skills and projects.
 
-## 🚀 Quick Start
+## 🌐 Live Site
 
-### Prerequisites
-- Ruby (for Jekyll)
-- Git
-- GitHub account
+**Portfolio URL:** `https://nakhandev.github.io`
 
-### Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/nakhandev/nakhandev.github.io.git
-cd nakhandev.github.io
-```
+## 🚀 Features
 
-2. Install Jekyll dependencies:
-```bash
-bundle install
-```
+- **Static Site Generation** with Jekyll
+- **Responsive Bootstrap 5** design
+- **Professional Portfolio** layout
+- **Contact Form** with Formspree integration
+- **SEO Optimized** with meta tags
+- **Mobile Friendly** design
+- **Fast Loading** static pages
 
-3. Serve locally:
-```bash
-bundle exec jekyll serve
-```
-
-4. Open `http://localhost:4000` in your browser
-
-## 📁 Project Structure
+## 📁 Site Structure
 
 ```
 nakhandev.github.io/
 ├── _config.yml          # Jekyll configuration
-├── _includes/           # Reusable HTML includes
+├── _layouts/
+│   └── default.html    # Main layout template
+├── _includes/
 │   ├── header.html     # Navigation header
 │   └── footer.html     # Site footer
-├── _layouts/           # Page layouts
-│   └── default.html    # Default layout
-├── _sass/              # SCSS styles
-├── assets/             # Static assets
+├── assets/
 │   ├── css/
-│   ├── js/
-│   ├── images/
-│   └── cv/            # CV/Resume files
-├── *.html              # Static pages
-├── *.md                # Markdown pages
-└── push.sh             # Automated push script
+│   │   └── styles.css  # Custom styles
+│   └── js/
+│       └── scripts.js  # JavaScript functionality
+├── index.html          # Homepage (static HTML)
+├── projects.md         # Projects page
+├── contact.md          # Contact page
+└── README.md          # This file
 ```
-
-## 🔧 Push Script
-
-The `push.sh` script automates the process of committing and pushing changes to GitHub.
-
-### Usage
-
-#### Interactive Mode (asks for commit message):
-```bash
-./push.sh
-```
-
-#### Auto Mode (uses provided commit message):
-```bash
-./push.sh "Your commit message here"
-```
-
-#### Help:
-```bash
-./push.sh --help
-```
-
-### Features
-- ✅ **Interactive commit messages** - prompts for commit message if none provided
-- ✅ **Default commit messages** - uses timestamp if no message entered
-- ✅ **Git status checking** - shows current changes before committing
-- ✅ **Error handling** - handles push failures gracefully
-- ✅ **Colored output** - easy to read status messages
-- ✅ **Safety checks** - warns if no changes to commit
-
-### Examples
-```bash
-# Interactive mode
-./push.sh
-
-# With custom message
-./push.sh "Add new project section"
-
-# Quick update
-./push.sh "Fix styling issues"
-```
-
-## 🌐 Deployment
-
-### GitHub Pages Setup
-1. Go to your repository: `https://github.com/nakhandev/nakhandev.github.io`
-2. Click **Settings** tab
-3. Scroll to **Pages** section
-4. Under **Source**, select **"GitHub Actions"**
-5. Click **Save**
-
-Your site will be available at: `https://nakhandev.github.io`
-
-## 📝 Content Management
-
-### Adding New Projects
-1. Edit `projects.html` or create new markdown files in `_posts/`
-2. Update project information in the HTML structure
-3. Add project images to `assets/images/`
-4. Run `./push.sh` to deploy changes
-
-### Updating Personal Information
-1. Edit `_config.yml` for site-wide changes
-2. Update contact information in HTML files
-3. Modify social media links as needed
-4. Run `./push.sh` to deploy changes
-
-## 🎨 Customization
-
-### Styling
-- Main styles: `assets/css/styles.css`
-- SCSS files: `_sass/` directory
-- Bootstrap 5 with custom dark theme
-
-### Layout
-- Header: `_includes/header.html`
-- Footer: `_includes/footer.html`
-- Default layout: `_layouts/default.html`
-
-## 📧 Contact Form
-
-The contact form uses **Formspree** for email delivery:
-- **Formspree ID:** `xyznbyyw`
-- **Email:** `nakdev.nakhan@gmail.com`
-- **Backup:** Direct email links throughout the site
 
 ## 🔧 Development
 
 ### Local Development
+
+1. **Install Jekyll** (if not installed)
+   ```bash
+   gem install jekyll bundler
+   ```
+
+2. **Install dependencies**
+   ```bash
+   bundle install
+   ```
+
+3. **Run locally**
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. **View site**
+   Open `http://localhost:4000` in your browser
+
+### Build for Production
+
 ```bash
-# Install dependencies
-bundle install
-
-# Serve locally
-bundle exec jekyll serve
-
-# Build for production
 bundle exec jekyll build
 ```
 
-### Push Changes
-```bash
-# Quick push with default message
-./push.sh
+## 📝 Content Management
 
-# Push with custom message
-./push.sh "Add new features"
+### Adding Projects
 
-# Check what will be pushed
-git status
+Edit the projects section in `index.html` or create new project pages using:
+```markdown
+---
+layout: default
+title: "Project Name"
+---
+
+# Project Description
+
+Content here...
 ```
 
-## 📱 Features
+### Updating Information
 
-- ✅ **Responsive Design** - Works on all devices
-- ✅ **Dark Theme** - Modern, professional appearance
-- ✅ **SEO Optimized** - Proper meta tags and structure
-- ✅ **Fast Loading** - Optimized assets and code
-- ✅ **Contact Form** - Working Formspree integration
-- ✅ **CV Download** - PDF resume available
-- ✅ **Project Showcase** - Featured projects section
-- ✅ **Social Links** - GitHub, LinkedIn integration
+- **Personal Info:** Edit `_config.yml`
+- **Site Settings:** Modify `_config.yml`
+- **Content:** Update markdown files
+- **Styling:** Modify `assets/css/styles.css`
 
-## 🛠️ Technologies Used
+## 🚀 Deployment
 
-- **Static Site Generator:** Jekyll
-- **Frontend:** HTML5, CSS3, JavaScript
-- **CSS Framework:** Bootstrap 5
-- **Icons:** Bootstrap Icons
-- **Email Service:** Formspree
-- **Version Control:** Git & GitHub
-- **Deployment:** GitHub Pages
+### GitHub Pages Setup
+
+1. **Enable GitHub Pages**
+   - Go to repository settings
+   - Scroll to "Pages" section
+   - Select "GitHub Actions" as source
+   - Save changes
+
+2. **Automatic Deployment**
+   - Push changes to `main` branch
+   - GitHub Actions will build and deploy automatically
+
+### Manual Deployment
+
+```bash
+# Build site
+jekyll build
+
+# Deploy to GitHub Pages
+gh-pages -d _site
+```
+
+## 🎨 Customization
+
+### Colors and Styling
+- Edit `assets/css/styles.css`
+- Modify CSS custom properties
+- Update Bootstrap theme colors
+
+### Layout Changes
+- Modify `_layouts/default.html`
+- Update `_includes/header.html` and `_includes/footer.html`
+- Customize navigation and footer
+
+### Adding Pages
+1. Create new `.md` file in root directory
+2. Add front matter with layout
+3. Add navigation link in header include
+
+## 📧 Contact Form
+
+The contact form uses **Formspree** for email handling:
+- No server required
+- Spam protection included
+- Custom email notifications
+
+To change the email address:
+1. Update the form action URL
+2. Update email in `_config.yml`
+
+## 🔍 SEO
+
+The site includes:
+- **Meta tags** for search engines
+- **Open Graph** tags for social media
+- **Twitter Card** support
+- **Sitemap** generation
+- **Structured data** ready
+
+## 📱 Responsive Design
+
+- **Mobile-first** approach
+- **Bootstrap 5** responsive grid
+- **Touch-friendly** navigation
+- **Optimized** for all screen sizes
+
+## 🚨 Troubleshooting
+
+### Common Issues
+
+1. **Site not loading**
+   - Check if GitHub Pages is enabled
+   - Verify repository settings
+   - Check build logs in Actions tab
+
+2. **Styles not loading**
+   - Verify asset paths
+   - Check file permissions
+   - Clear browser cache
+
+3. **Contact form not working**
+   - Verify Formspree configuration
+   - Check email address in form action
+   - Test with different email
+
+### Build Issues
+
+```bash
+# Clean and rebuild
+bundle exec jekyll clean
+bundle exec jekyll build
+
+# Check for errors
+bundle exec jekyll build --trace
+```
 
 ## 📞 Support
 
-For questions or issues:
-- **Email:** nakdev.nakhan@gmail.com
-- **GitHub:** https://github.com/nakhandev
-- **LinkedIn:** https://linkedin.com/in/nawabnakhan
+For issues or questions:
+- Check GitHub repository issues
+- Review Jekyll documentation
+- Test locally before deploying
 
 ---
 
-**Built with ❤️ by Md Nawab Ali Khan**
+**Built with ❤️ using Jekyll, HTML5, CSS3 & Bootstrap**
+
+⭐ If you found this project helpful, please give it a star!
