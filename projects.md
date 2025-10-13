@@ -82,7 +82,7 @@ description: "Featured projects by Md Nawab Ali Khan - Java Backend Developer sh
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <h5 class="card-title text-warning mb-0">Student Management System</h5>
                             <div class="project-links">
-                                <a href="https://github.com/nawabnakhan/student-management" target="_blank" class="btn btn-sm btn-outline-warning me-2">
+                                <a href="https://github.com/nakhandev/student-management" target="_blank" class="btn btn-sm btn-outline-warning me-2">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
@@ -113,7 +113,7 @@ description: "Featured projects by Md Nawab Ali Khan - Java Backend Developer sh
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <h5 class="card-title text-warning mb-0">Login & Registration API</h5>
                             <div class="project-links">
-                                <a href="https://github.com/nawabnakhan/auth-api" target="_blank" class="btn btn-sm btn-outline-warning me-2">
+                                <a href="https://github.com/nakhandev/auth-api" target="_blank" class="btn btn-sm btn-outline-warning me-2">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
@@ -144,7 +144,7 @@ description: "Featured projects by Md Nawab Ali Khan - Java Backend Developer sh
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <h5 class="card-title text-warning mb-0">E-commerce Cart System</h5>
                             <div class="project-links">
-                                <a href="https://github.com/nawabnakhan/ecommerce-cart" target="_blank" class="btn btn-sm btn-outline-warning me-2">
+                                <a href="https://github.com/nakhandev/ecommerce-cart" target="_blank" class="btn btn-sm btn-outline-warning me-2">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
@@ -176,7 +176,7 @@ description: "Featured projects by Md Nawab Ali Khan - Java Backend Developer sh
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <h5 class="card-title text-warning mb-0">Blog Management System</h5>
                             <div class="project-links">
-                                <a href="https://github.com/nawabnakhan/blog-system" target="_blank" class="btn btn-sm btn-outline-warning me-2">
+                                <a href="https://github.com/nakhandev/blog-system" target="_blank" class="btn btn-sm btn-outline-warning me-2">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
@@ -207,7 +207,7 @@ description: "Featured projects by Md Nawab Ali Khan - Java Backend Developer sh
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <h5 class="card-title text-warning mb-0">Task Management API</h5>
                             <div class="project-links">
-                                <a href="https://github.com/nawabnakhan/task-api" target="_blank" class="btn btn-sm btn-outline-warning me-2">
+                                <a href="https://github.com/nakhandev/task-api" target="_blank" class="btn btn-sm btn-outline-warning me-2">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
