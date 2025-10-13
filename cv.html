@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV/Resume of Md Nawab Ali Khan - Java Backend Developer specializing in Spring Boot, REST APIs, and SQL databases">
+    <meta name="keywords" content="Java Developer CV, Spring Boot Resume, Backend Developer Resume">
+    <meta name="author" content="Md Nawab Ali Khan">
+    <title>CV - Md Nawab Ali Khan</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <style>
+        /* CV Specific Styles */
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            color: #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .cv-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item i {
+            color: #ffc107;
+        }
+
+        .cv-section {
+            padding: 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .cv-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #ffc107;
+        }
+
+        .cv-content {
+            line-height: 1.6;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-category h6 {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .project-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-tech {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .institution {
+            color: #667eea;
+        }
+
+        .year {
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .cv-actions {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .btn-download {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-print {
+            background: #ffc107;
+            color: #212529;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            margin-left: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-print:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+        }
+
+        @media print {
+            .navbar, .cv-actions, .btn-download, .btn-print {
+                display: none !important;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+            }
+
+            .cv-section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cv-header {
+                padding: 2rem 1rem;
+            }
+
+            .cv-header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cv-section {
+                padding: 1.5rem 1rem;
+            }
+
+            .btn-print {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-slash me-2"></i>Md Nawab Ali Khan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">
+                            <i class="bi bi-folder me-1"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="bi bi-file-earmark-person me-1"></i>CV
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <!-- Social Links -->
+                <div class="navbar-nav ms-lg-3">
+                    <a class="nav-link" href="mailto:nawabnak@gmail.com" title="Email">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a class="nav-link" href="https://github.com/nawabnakhan" target="_blank" title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a class="nav-link" href="https://linkedin.com/in/nawabnakhan" target="_blank" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CV Container -->
+    <div class="cv-container mt-5">
+        <!-- CV Header -->
+        <div class="cv-header">
+            <h1>MD NAWAB ALI KHAN</h1>
+            <div class="subtitle">Java Backend Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <span>+91 9523948889</span>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <span>nawabnak@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Jamia Nagar, Delhi, India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-linkedin"></i>
+                    <a href="https://linkedin.com/in/nawabnakhan" class="text-white text-decoration-none">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-github"></i>
+                    <a href="https://github.com/nawabnakhan" class="text-white text-decoration-none">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="cv-section">
+            <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+            <div class="cv-content">
+                <p>Motivated Java Developer with a strong foundation in Java SE/EE, Spring Boot, and RESTful APIs. Skilled in backend development, database management, and building scalable solutions. Eager to contribute to dynamic teams, drive innovation, and continuously grow as a software professional.</p>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="cv-section">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="cv-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h6>Programming Languages</h6>
+                        <div class="skill-list">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h6>Frameworks & Libraries</h6>
+                        <div class="skill-list">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Servlet/JSP</span>
+                            <span class="skill-tag">Spring Data JPA</span>
+                            <span class="skill-tag">Spring Web</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h6>Databases</h6>
+                        <div class="skill-list">
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h6>Tools & Technologies</h6>
+                        <div class="skill-list">
+                            <span class="skill-tag">RESTful Web Services</span>
+                            <span class="skill-tag">Hibernate Validator</span>
+                            <span class="skill-tag">ModelMapper</span>
+                            <span class="skill-tag">Lombok</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h6>Development Tools</h6>
+                        <div class="skill-list">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Maven</span>
+                            <span class="skill-tag">Ant</span>
+                            <span class="skill-tag">NetBeans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="cv-section">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="cv-content">
+                <div class="project-item">
+                    <div class="project-title">E-Commerce Backend API</div>
+                    <div class="project-tech">Java 17, Spring Boot 3.3.4, MySQL, Maven</div>
+                    <ul>
+                        <li>Built a robust backend system using Java 17 and Spring Boot 3.3.4</li>
+                        <li>Designed RESTful endpoints for products, users, orders, shopping cart, and categories</li>
+                        <li>Implemented Spring Data JPA for persistence and Lombok to reduce boilerplate code</li>
+                        <li>Tech stack: Java 17, Spring Boot, MySQL, Maven, Hibernate Validator, ModelMapper</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="cv-content">
+                <div class="education-item">
+                    <div class="degree">B.Tech – Computer Science & Engineering</div>
+                    <div class="institution">Integral University, Lucknow</div>
+                    <div class="year">2021–2024</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="degree">Diploma – Computer Science & Engineering</div>
+                    <div class="institution">Integral University, Lucknow</div>
+                    <div class="year">2018–2021</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="degree">Higher Secondary (XII)</div>
+                    <div class="institution">Sacred Heart School, Sitamarhi</div>
+                    <div class="year">2016</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="cv-section">
+            <h2 class="section-title">ADDITIONAL INFORMATION</h2>
+            <div class="cv-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Languages</h6>
+                        <p>English, Hindi</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Interests</h6>
+                        <p>Badminton, Movies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV Actions -->
+        <div class="cv-actions">
+            <h4 class="mb-4">Download CV</h4>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="assets/cv/NAKCV.pdf" download class="btn btn-download">
+                    <i class="bi bi-download me-2"></i>Download PDF
+                </a>
+                <button onclick="window.print()" class="btn btn-print">
+                    <i class="bi bi-printer me-2"></i>Print CV
+                </button>
+                <a href="index.html" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
