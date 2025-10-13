@@ -122,7 +122,7 @@ description: "Portfolio of Md Nawab Ali Khan - Java Backend Developer specializi
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h6 class="card-title mb-0">Spring Boot</h6>
-                            <span class="badge bg-warning text-dark">Advanced</span>
+                            <span class="badge bg-warning text-dark">Intermediate</span>
                         </div>
                         <p class="text-muted mb-0">Frameworks</p>
                     </div>
@@ -209,7 +209,7 @@ description: "Portfolio of Md Nawab Ali Khan - Java Backend Developer specializi
                         <div class="mb-3">
                             <small class="text-muted">Technologies: Java, Spring Boot, MySQL, REST API</small>
                         </div>
-                        <a href="https://github.com/nawabnakhan/student-management" target="_blank" class="btn btn-outline-warning btn-sm">
+                        <a href="https://github.com/nakhandev/student-management" target="_blank" class="btn btn-outline-warning btn-sm">
                             <i class="bi bi-github me-1"></i>View Code
                         </a>
                     </div>
@@ -223,7 +223,7 @@ description: "Portfolio of Md Nawab Ali Khan - Java Backend Developer specializi
                         <div class="mb-3">
                             <small class="text-muted">Technologies: Java, Spring Boot, Spring Security, JWT</small>
                         </div>
-                        <a href="https://github.com/nawabnakhan/auth-api" target="_blank" class="btn btn-outline-warning btn-sm">
+                        <a href="https://github.com/nakhandev/auth-api" target="_blank" class="btn btn-outline-warning btn-sm">
                             <i class="bi bi-github me-1"></i>View Code
                         </a>
                     </div>
@@ -237,7 +237,7 @@ description: "Portfolio of Md Nawab Ali Khan - Java Backend Developer specializi
                         <div class="mb-3">
                             <small class="text-muted">Technologies: Java, Spring MVC, MySQL, JSP</small>
                         </div>
-                        <a href="https://github.com/nawabnakhan/ecommerce-cart" target="_blank" class="btn btn-outline-warning btn-sm">
+                        <a href="https://github.com/nakhandev/ecommerce-cart" target="_blank" class="btn btn-outline-warning btn-sm">
                             <i class="bi bi-github me-1"></i>View Code
                         </a>
                     </div>

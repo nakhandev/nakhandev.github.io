@@ -87,8 +87,8 @@ description: "Contact Md Nawab Ali Khan - Java Backend Developer for projects, c
                                 <div>
                                     <strong>Email</strong>
                                     <br>
-                                    <a href="mailto:nawabnak@gmail.com" class="text-white text-decoration-none">
-                                        nawabnak@gmail.com
+                                    <a href="mailto:nakdev.nakhan@gmail.com" class="text-white text-decoration-none">
+                                        nakdev.nakhan@gmail.com
                                     </a>
                                 </div>
                             </div>
@@ -113,8 +113,8 @@ description: "Contact Md Nawab Ali Khan - Java Backend Developer for projects, c
                                 <div>
                                     <strong>GitHub</strong>
                                     <br>
-                                    <a href="https://github.com/nawabnakhan" target="_blank" class="text-white text-decoration-none">
-                                        github.com/nawabnakhan
+                                    <a href="https://github.com/nakhandev" target="_blank" class="text-white text-decoration-none">
+                                        github.com/nakhandev
                                     </a>
                                 </div>
                             </div>
