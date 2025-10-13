@@ -4,7 +4,7 @@ A static portfolio website built with Jekyll and hosted on GitHub Pages, showcas
 
 ## 🌐 Live Site
 
-**Portfolio URL:** `https://nakhandev.github.io`
+**Portfolio URL:** [https://nakhandev.github.io](https://nakhandev.github.io)
 
 ## 🚀 Features
 
