@@ -383,16 +383,22 @@
                         timestamp: new Date().toLocaleString()
                     };
 
-                    // Method 1: Try Formspree
+                    // Method 1: Try Formspree with form data
                     let success = false;
                     try {
+                        const formData = new FormData();
+                        formData.append('name', name);
+                        formData.append('email', email);
+                        formData.append('phone', phone);
+                        formData.append('subject', subject);
+                        formData.append('message', message);
+
                         const formspreeResponse = await fetch('https://formspree.io/f/xyznbyyw', {
                             method: 'POST',
+                            body: formData,
                             headers: {
-                                'Content-Type': 'application/json',
                                 'Accept': 'application/json'
-                            },
-                            body: JSON.stringify(emailData)
+                            }
                         });
 
                         if (formspreeResponse.ok) {
@@ -414,7 +420,7 @@
 
                 } catch (error) {
                     console.error('Email error:', error);
-                    showAlert('Sorry, there was an error sending your message. Please try emailing me directly at nawabnak@gmail.com', 'warning');
+                    showAlert('Sorry, there was an error sending your message. Please try emailing me directly at nakdev.nakhan@gmail.com', 'warning');
                 } finally {
                     // Remove loading state
                     submitBtn.classList.remove('loading');
