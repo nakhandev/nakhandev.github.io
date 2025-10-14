@@ -16,7 +16,7 @@ I'm always interested in new opportunities and exciting projects. Let's have a c
 📧 **Email:** [nakdev.nakhan@gmail.com](mailto:nakdev.nakhan@gmail.com)
 📱 **Phone:** [+91 9523948889](tel:+919523948889)
 🌐 **GitHub:** [github.com/nakhandev](https://github.com/nakhandev)
-💼 **LinkedIn:** [linkedin.com/in/nawabnakhan](https://linkedin.com/in/nawabnakhan)
+💼 **LinkedIn:** [linkedin.com/in/nawabnakhan](https://linkedin.com/in/nakhandev)
 
 ## Services Available
 
