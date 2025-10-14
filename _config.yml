@@ -19,8 +19,8 @@ social:
   name: Md Nawab Ali Khan
   links:
     - https://github.com/nakhandev
-    - https://linkedin.com/in/nawabnakhan
-    - https://twitter.com/nawabnakhan
+    - https://linkedin.com/in/nakhandev
+    - https://twitter.com/nakhandev
 
 # Collections
 collections:
@@ -62,7 +62,7 @@ exclude:
 # Site settings
 tagline: "Java Backend Developer | Open Source Enthusiast | Continuous Learner"
 github_username: nakhandev
-linkedin_username: nawabnakhan
+linkedin_username: nakhandev
 email: nakdev.nakhan@gmail.com
 phone: "+91 9523948889"
 
