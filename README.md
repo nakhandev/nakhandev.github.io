@@ -2,9 +2,12 @@ Md Nawab Ali Khan - Portfolio (Jekyll Site)
 
 A static portfolio website built with Jekyll and hosted on GitHub Pages, showcasing Java backend development skills and projects.
 
-## 🌐 Live Site
-
-**Portfolio URL:** [https://nakhandev.github.io](https://nakhandev.github.io)
+<h2 align="center">🌐 Live Site</h2>
+<p align="center">
+  <a href="https://nakhandev.github.io" target="_blank">
+    <img src="https://img.shields.io/badge/Visit_Portfolio-4B8BBE?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio Badge"/>
+  </a>
+</p>
 
 ## 🚀 Features
 
