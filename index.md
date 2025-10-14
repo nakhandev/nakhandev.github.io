@@ -39,7 +39,7 @@ Full-featured shopping cart implementation with layered architecture supporting 
 📧 **Email:** nakdev.nakhan@gmail.com
 📱 **Phone:** +91 9523948889
 🌐 **GitHub:** [github.com/nakhandev](https://github.com/nakhandev)
-💼 **LinkedIn:** [linkedin.com/in/nawabnakhan](https://linkedin.com/in/nawabnakhan)
+💼 **LinkedIn:** [linkedin.com/in/nawabnakhan](https://linkedin.com/in/nakhandev)
 
 I'm always interested in new opportunities and exciting projects. Let's have a conversation about how we can work together!
 
